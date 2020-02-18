@@ -9,5 +9,5 @@
 pre-commit-hook.sh
 ```
 cd ~/PycharmProjects/your-project-folder
-docker exec completecase flake8 `git diff HEAD --name-only|grep ".py" || echo "path-to-folder-where-git-init"` || exit 1
+docker exec container-name flake8 `git diff HEAD --name-only|grep ".py" || echo "path-to-folder-where-git-init"` || exit 1
 ``` 
