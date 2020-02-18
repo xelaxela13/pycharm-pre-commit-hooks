@@ -5,6 +5,8 @@
 3. chmod a+x pre-commit-hook.sh
 4. Settings -> Tools -> Pre Commit Hook
 5. Put a path to your script
+
+pre-commit-hook.sh
 ```
 cd ~/PycharmProjects/your-project-folder
 docker exec completecase flake8 `git diff HEAD --name-only|grep ".py" || echo "path-to-folder-where-git-init"` || exit 1
